@@ -3,6 +3,5 @@ steps:
   args: ['install']
 - name: 'gcr.io/cloud-builders/npm'
   args: ['test']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--tag=gcr.io/optimal-weft-259114/hello_npm', '.']
-images: ['gcr.io/optimal-weft-259114/hello_npm']
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['start', '--tag=gcr.io/optimal-weft-259114', '.']
